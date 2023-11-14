@@ -5,25 +5,293 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Falcon Airways</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <nav id="Top--Nav" class="row--box">
-        <div id="Top--Nav__Logo">
-            <a class="top--nav--link link--style" href="index.html">Logo</a>
-        </div>
-        <div id="Top--Nav__Links">
-            <a href="">Home</a>
-            <a href="">Offers</a>
-            <a href="">Flights</a>
-            <a href="">Contact</a>
-        </div>
-        <div id="Top--Nav__Buttons">
-            <button id="Sign--In__Button" class="main--button button--style">Sign In</button>
-            <button id="Sign--In__Button" class="main--button button--style">Book Now</button>
-        </div>
+    <nav>
+        <section id="desktopNav">
+            <div id="desktopNavLogo" class="nav-group">
+                <h1>Logo</h1>
+            </div>
+            <div id="desktopNavLinks" class="nav-group">
+                <a href="" class="nav-link-style">Home</a>
+                <a href="" class="nav-link-style">Offers</a>
+                <a href="" class="nav-link-style">FAQ</a>
+                <a href="" class="nav-link-style">Contact Us</a>
+            </div>
+            <div id="desktopNavButton" class="nav-group">
+                <button id="loginButton" class="primary-button button-style">Login</button>
+            </div>
+        </section>
+        <section id="mobileNav"></section>
     </nav>
-    <main></main>
+    <header id="homeHeader">
+        <section id="homeHeaderDescription">
+            <h1 class="title">Find Your Next Place To Visit.</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, culpa.
+            </p>
+            <button id="homeBookNowButton" class="primary-button button-style">Book Now</button>
+        </section>
+        <section id="homeHeaderExploreOffers">
+            <form action="">
+                <div id="homeFormHeader" class="form-group">
+                    <h2>Where To Go?</h2>
+                </div>
+                <div id="homeFormLocationGroup" class="form-group">
+                    <i></i>
+                    <div class="input-group">
+                        <label for="Location">Location</label>
+                        <input type="text" name="Location" id="cityNameInput" class="input-style">
+                        <ul id="homeLocationsCitiesList">
+                            <li class="list-item-style">Rome</li>
+                            <li class="list-item-style">Santorini</li>
+                            <li class="list-item-style">Paris</li>
+                            <li class="list-item-style">London</li>
+                            <li class="list-item-style">Dublin</li>
+                            <li class="list-item-style">Istanbul</li>
+                            <li class="list-item-style">Ankara</li>
+                            <li class="list-item-style">Venice</li>
+                            <li class="list-item-style">Madrid</li>
+                            <li class="list-item-style">Barcelona</li>
+                            <li class="list-item-style">Zagreb</li>
+                            <li class="list-item-style">New York</li>
+                            <li class="list-item-style">Los Angeles</li>
+                            <li class="list-item-style">San Francisco</li>
+                            <li class="list-item-style">Miami</li>
+                            <li class="list-item-style">Mecca</li>
+                            <li class="list-item-style">Medina</li>
+                            <li class="list-item-style">Cairo</li>
+                            <li class="list-item-style">Tokyo</li>
+                            <li class="list-item-style">Seoul</li>
+                        </ul>
+                        <input type="text" name="" id="countryNameInput" class="input-style">
+                        <ul id="homeLocationsCountriesList">
+                            <li class="list-item-style">Italy</li>
+                            <li class="list-item-style">Greece</li>
+                            <li class="list-item-style">France</li>
+                            <li class="list-item-style">UK</li>
+                            <li class="list-item-style">Ireland</li>
+                            <li class="list-item-style">Turkey</li>
+                            <li class="list-item-style">Spain</li>
+                            <li class="list-item-style">Croatia</li>
+                            <li class="list-item-style">USA</li>
+                            <li class="list-item-style">Saudi Arabia</li>
+                            <li class="list-item-style">Egypt</li>
+                            <li class="list-item-style">Japan</li>
+                            <li class="list-item-style">South Korea</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="homeFormDateGroup" class="form-group">
+                    <i></i>
+                    <div class="input-group">
+                        <label for="DatePicker">Date</label>
+                        <input type="date" name="DatePicker" id="datePicker" class="input-style">
+                    </div>
+                </div>
+                <div id="homeFormPriceGroup" class="form-group">
+                    <i></i>
+                    <div class="input-group">
+                        <label for="PriceRange">Average</label>
+                        <input type="number" name="MinPrice" class="input-style">
+                        <input type="number" name="MaxPrice" class="input-style">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="primary-button button-style"></button>
+                </div>
+            </form>
+        </section>
+    </header>
+    <main id="homeMain">
+        <section id="homeExploreTopDestinations">
+            <div id="homeExploreHeading" class="section-heading">
+                <h2 class="subtitle">Explore Top Destinations</h2>
+                <p class="description-paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                    accusantium?
+                </p>
+            </div>
+            <div id="homeExploreCardSlider" class="section-content">
+                <div id="homeExploreSliderButtons" class="slider-buttons">
+                    <button id="leftExploreSliderButton" class="slider-button button-style">Left</button>
+                    <button id="rightExploreSliderButton" class="slider-button button-style">Right</button>
+                </div>
+                <div id="homeExploreSliderCards" class="slider-cards">
+                    <div id="homeSliderCard1" class="home-slider-card card-style">
+                        <div class="home-slider-card-info">
+                            <h3 class="slider-card-name">Santorini</h3>
+                            <span>
+                                <h4 class="slider-card-location">
+                                    <i></i> Greece
+                                </h4>
+                                <span class="slider-card-review-span">
+                                    <i></i>
+                                    <h4 class="slider-card-review">
+                                        4.8
+                                        <span class="slider-card-review-total">
+                                            (1.4k)
+                                        </span>
+                                    </h4>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="home-slider-card-image">
+                            <img src="" alt="" class="slider-card-image img-style">
+                        </div>
+                    </div>
+                    <div id="homeSliderCard2" class="home-slider-card card-style">
+                        <div class="home-slider-card-info">
+                            <h3 class="slider-card-name">Santorini</h3>
+                            <span>
+                                <h4 class="slider-card-location">
+                                    <i></i> Greece
+                                </h4>
+                                <span class="slider-card-review-span">
+                                    <i></i>
+                                    <h4 class="slider-card-review">
+                                        4.8
+                                        <span class="slider-card-review-total">
+                                            (1.4k)
+                                        </span>
+                                    </h4>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="home-slider-card-image">
+                            <img src="" alt="" class="slider-card-image img-style">
+                        </div>
+                    </div>
+                    <div id="homeSliderCard3" class="home-slider-card card-style">
+                        <div class="home-slider-card-info">
+                            <h3 class="slider-card-name">Santorini</h3>
+                            <span>
+                                <h4 class="slider-card-location">
+                                    <i></i> Greece
+                                </h4>
+                                <span class="slider-card-review-span">
+                                    <i></i>
+                                    <h4 class="slider-card-review">
+                                        4.8
+                                        <span class="slider-card-review-total">
+                                            (1.4k)
+                                        </span>
+                                    </h4>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="home-slider-card-image">
+                            <img src="" alt="" class="slider-card-image img-style">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="homeOurServices">
+            <div id="homeServicesHeading" class="section-heading">
+                <h3 class="subtitle-category">Traveler Point</h3>
+                <h2 class="subtitle">We Offer The Best Services</h2>
+            </div>
+            <div id="homeServicesContent" class="section-content">
+                <div id="homeServicesDropDown">
+                    <div class="services-drop-down-card card-style">
+                        <div class="drop-down-card-image">
+                            <img src="" alt="" class="img-style">
+                        </div>
+                        <div class="drop-down-card-description">
+                            <h3 class="drop-down-card-title">Best Travel Pack</h3>
+                            <p class="drop-down-card-paragraph">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="homeServicesImage">
+                    <img src="" alt="" class="section-image img-style">
+                </div>
+            </div>
+        </section>
+        <section id="homeExperience">
+            <div id="homeExperienceContent" class="section-content">
+                <div id="homeExperienceHeading" class="section-heading">
+                    <h3 class="subtitle-category">Our Experience</h3>
+                    <h2 class="subtitle">The Best Experienced Staff.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ad dicta at assumenda dolorum
+                        mollitia.
+                    </p>
+                </div>
+                <div id="homeExperienceStatistics">
+                    <div class="statistics-group">
+                        <h2 class="statistics-number">10</h2>
+                        <p class="statistics-paragraph">Years Experience</p>
+                    </div>
+                    <div class="statistics-group">
+                        <h2 class="statistics-number">500+</h2>
+                        <p class="statistics-paragraph">Destination Collaborations</p>
+                    </div>
+                    <div class="statistics-group">
+                        <h2 class="statistics-number">10K+</h2>
+                        <p class="statistics-paragraph">Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+            <div id="homeExperienceImage" class="section-image"></div>
+        </section>
+        <section id="homePopularPicks">
+            <div id="homePopularHeading" class="section-heading">
+                <h3 class="subtitle-category">Popular Picks</h3>
+                <h2 class="subtitle">Most Popular Picks From Customers</h2>
+            </div>
+            <div id="homePopularCardSlider" class="section-content">
+                <div id="homePopularSliderButtons" class="slider-buttons">
+                    <button id="leftPopularSliderButton" class="slider-button button-style">Left</button>
+                    <button id="rightPopularSliderButton" class="slider-button button-style">Right</button>
+                </div>
+                <div id="homePopularSliderCards" class="slider-cards">
+                    <div id="homePopularCard1" class="home-popular-card card-style">
+                        <img src="" alt="" class="home-popular-card-img img-style">
+                        <div class="home-popular-card-info">
+                            <h3 class="home-popular-card-title">Toronto, Canada</h3>
+                            <span class="home-popular-card-span">
+                                <h4 class="home-popular-card-price">$400</h4>
+                                <h5 class="per-person">per person</h5>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="homePopularCard2" class="home-popular-card card-style">
+                        <img src="" alt="" class="home-popular-card-img img-style">
+                        <div class="home-popular-card-info">
+                            <h3 class="home-popular-card-title">Toronto, Canada</h3>
+                            <span class="home-popular-card-span">
+                                <h4 class="home-popular-card-price">$400</h4>
+                                <h5 class="per-person">per person</h5>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="homePopularCard3" class="home-popular-card card-style">
+                        <img src="" alt="" class="home-popular-card-img img-style">
+                        <div class="home-popular-card-info">
+                            <h3 class="home-popular-card-title">Toronto, Canada</h3>
+                            <span class="home-popular-card-span">
+                                <h4 class="home-popular-card-price">$400</h4>
+                                <h5 class="per-person">per person</h5>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-box"></div>
+        <div class="footer-box"></div>
+        <div class="footer-box"></div>
+    </footer>
 </body>
 
 </html>
